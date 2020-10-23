@@ -1,0 +1,32 @@
+﻿<Window x:Class="MemoWords.Add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoWords"
+        mc:Ignorable="d"
+        Title="Add" Height="230" Width="400" >
+    <StackPanel>
+        <StackPanel.Background>
+            <SolidColorBrush Color="DodgerBlue"></SolidColorBrush>
+        </StackPanel.Background>
+        
+        
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="30">Word to learn</TextBlock>
+        <TextBox FontSize="30" Name="Word" Width="170" BorderBrush="PapayaWhip" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="DodgerBlue"></SolidColorBrush>
+            </TextBox.Background>
+        </TextBox>
+        
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="30">Translation of word</TextBlock>
+        <TextBox FontSize="30" Name="Translation" Width="170" BorderBrush="PapayaWhip" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="DodgerBlue"></SolidColorBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Name="Submit" Width="50" Margin="5" Click="Submit_Click">Add</Button>
+    </StackPanel>
+</Window>

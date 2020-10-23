@@ -1,0 +1,58 @@
+﻿<Window x:Class="MoneyJournal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoneyManager.Converters"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Money Manager" Height="600" Width="800">
+    <!--  https://stackoverflow.com/questions/705815/how-to-stretch-wpf-tab-item-headers-to-parent-control-width-->
+    <Window.Resources>
+        <local:TabSizeConverter x:Key="tabSizeConverter" />
+        <Style TargetType="{x:Type TabItem}">
+            <Setter Property="Width">
+                <Setter.Value>
+                    <MultiBinding Converter="{StaticResource tabSizeConverter}">
+                        <Binding RelativeSource="{RelativeSource Mode=FindAncestor,
+            AncestorType={x:Type TabControl}}" />
+                        <Binding RelativeSource="{RelativeSource Mode=FindAncestor,
+            AncestorType={x:Type TabControl}}" Path="ActualWidth" />
+                    </MultiBinding>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel Orientation="Vertical">
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_Save in file"  Click="MenuItem_Click"/>
+                <MenuItem Header="_Save" Click="MenuItem_Click_2"/>
+                <Separator/>
+                <MenuItem Header="_Set money" Click="MenuItem_Click_1"/>
+            </MenuItem>
+        </Menu>
+        <TextBlock Name="moneyleft" Text="Money left: 0" FontSize="20" HorizontalAlignment="Center"></TextBlock>
+        <DatePicker Name="DatePicker" Width="100" SelectedDate="{x:Static sys:DateTime.Now}" CalendarClosed="DatePicker_CalendarClosed"/>
+        <TextBlock HorizontalAlignment="Center" Name="TodayMoney">Today: 0</TextBlock>
+        <Button Width="110" Click="Button_Click_4" Name="AddButton">Add</Button>
+        <TabControl Name="tabs" Height="500">
+            <TabItem Name="CostsTabs" Header="Costs" HorizontalAlignment="Left" VerticalAlignment="Center" GotFocus="CostsTabs_GotFocus">
+                <ListBox Name="Costs" Grid.Column="0">
+                </ListBox>
+            </TabItem>
+            <TabItem Header="Income" HorizontalAlignment="Right"
+                     VerticalAlignment="Center" GotFocus="TabItem_GotFocus">
+                <ListBox Name="Income">
+                </ListBox>
+            </TabItem>
+            <TabControl.Resources>
+                <Style TargetType="{x:Type ListBox}">
+                    <Setter Property="FontSize" Value="35"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                </Style>
+            </TabControl.Resources>
+        </TabControl>
+        
+    </StackPanel>
+</Window>

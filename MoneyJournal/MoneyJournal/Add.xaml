@@ -1,0 +1,16 @@
+﻿<Window x:Class="MoneyManager.Add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoneyManager"
+        mc:Ignorable="d"
+        Title="Add" Height="150" Width="200">
+    <StackPanel>
+        <Label HorizontalAlignment="Center">Name:</Label>
+        <TextBox HorizontalAlignment="Center" Name="name" Width="100"></TextBox>
+        <Label HorizontalAlignment="Center">Money:</Label>
+        <TextBox HorizontalAlignment="Center" Name="money" Width="100" TextChanged="money_TextChanged"></TextBox>
+        <Button HorizontalAlignment="Center" Name="ok" Click="ok_Click">OK</Button>
+    </StackPanel>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoWords", "MemoWords\MemoWords.csproj", "{E00859AE-E974-4639-873F-795D58FE933C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoriseWordsLibrary", "MemoriseWordsLibrary\MemoriseWordsLibrary.csproj", "{7D6A0760-7BEC-4B20-B9E1-481951162FEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E00859AE-E974-4639-873F-795D58FE933C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00859AE-E974-4639-873F-795D58FE933C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E00859AE-E974-4639-873F-795D58FE933C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E00859AE-E974-4639-873F-795D58FE933C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6A0760-7BEC-4B20-B9E1-481951162FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6A0760-7BEC-4B20-B9E1-481951162FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6A0760-7BEC-4B20-B9E1-481951162FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6A0760-7BEC-4B20-B9E1-481951162FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C73F9E0D-8212-4293-8937-4DB500BE52C3}
+	EndGlobalSection
+EndGlobal

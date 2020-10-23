@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyManager", "MoneyJournal\MoneyManager.csproj", "{65AB3A6B-0DBD-41E3-81ED-E4F1B490A74F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyManagerClasses", "MoneyManagerClasses\MoneyManagerClasses.csproj", "{A5846AB8-32DC-4A31-AB12-8EC260D4F33B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65AB3A6B-0DBD-41E3-81ED-E4F1B490A74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AB3A6B-0DBD-41E3-81ED-E4F1B490A74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AB3A6B-0DBD-41E3-81ED-E4F1B490A74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AB3A6B-0DBD-41E3-81ED-E4F1B490A74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5846AB8-32DC-4A31-AB12-8EC260D4F33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5846AB8-32DC-4A31-AB12-8EC260D4F33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5846AB8-32DC-4A31-AB12-8EC260D4F33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5846AB8-32DC-4A31-AB12-8EC260D4F33B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04041C7A-E60F-467E-88CA-4F8285227650}
+	EndGlobalSection
+EndGlobal

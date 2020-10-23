@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotesApp", "NotesApp\NotesApp.csproj", "{152581ED-72C0-4AA1-BCE2-B5BF01754ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesClassLibrary", "NotesClassLibrary\NotesClassLibrary.csproj", "{39CBE6C4-3424-4E65-A26E-4EB2CE204287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{152581ED-72C0-4AA1-BCE2-B5BF01754ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{152581ED-72C0-4AA1-BCE2-B5BF01754ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{152581ED-72C0-4AA1-BCE2-B5BF01754ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{152581ED-72C0-4AA1-BCE2-B5BF01754ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CBE6C4-3424-4E65-A26E-4EB2CE204287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CBE6C4-3424-4E65-A26E-4EB2CE204287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CBE6C4-3424-4E65-A26E-4EB2CE204287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CBE6C4-3424-4E65-A26E-4EB2CE204287}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E3E80D0-828A-4089-9335-0C4469D8A671}
+	EndGlobalSection
+EndGlobal
