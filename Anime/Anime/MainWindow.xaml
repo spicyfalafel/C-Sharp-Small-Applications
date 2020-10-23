@@ -1,0 +1,56 @@
+﻿<Window x:Class="Anime.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Anime Storage Application" Height="600" Width="1065" MaxWidth="1065"
+        Closing="Window_Closing">
+    <StackPanel Margin="10" >
+        
+        <StackPanel.Background>
+            <SolidColorBrush Color="Aqua"/>
+        </StackPanel.Background>
+        <DataGrid Name="dgAnime" AutoGenerateColumns="False" MaxHeight="400">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Year" Binding="{Binding Year}">
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Name of anime" Binding="{Binding NameOfAnime}" />
+                <DataGridTextColumn Header="Number of episodes" Binding="{Binding NumberOfEpisodes}" />
+                <DataGridTextColumn Header="Last watched " Binding="{Binding NumberOfMyEpisode}" />
+                <DataGridTextColumn Header="My rate (max 10)" Binding="{Binding MyRate}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="10">
+                                    <!-- https://stackoverflow.com/questions/5549617/change-datagrid-cell-colour-based-on-values-->
+                                    <Setter Property="Background" Value="LightGreen"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Url to watch" Binding="{Binding UrlToWatch}" />
+                <DataGridTextColumn Header="Genres" Binding="{Binding Genres}" />
+                <DataGridTextColumn Header="Age group" Binding="{Binding AgeGroup}" />
+                <DataGridTextColumn Header="Author of original" Binding="{Binding AuthorOfOriginal}" />
+            </DataGrid.Columns>
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <TextBlock Margin="10" Text="Open: " HorizontalAlignment="Center">
+                        <Hyperlink NavigateUri="{Binding UrlToWatch}" RequestNavigate="Hyperlink_RequestNavigate">
+                            url
+                        </Hyperlink>
+                        <LineBreak/>
+                        <Button Name="makeFav" Height="30" Width="130" Click="makeFav_Click">Make fav</Button>
+                    </TextBlock>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="show" Height="30" Width="30" Click="show_Click">Show all elements</Button>
+            <Button Name="changeToFav" Height="30" Width="70" Click="changeToFav_Click">Show favs</Button>
+            <Button Name="saveToFile" Height="30" Width="70" Click="saveToFile_Click">Save in file</Button>
+            <Button Name="deleteFile" Height="30" Width="70" Click="deleteFile_Click">Delete row</Button>
+            <Button Name="showAvailableEnums" Height="30" Width="70" Click="showAvailableEnums_Click">Help</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
