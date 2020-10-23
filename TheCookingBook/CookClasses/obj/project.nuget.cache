@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "erZ2Ham9cWS9ycyC47CGF5LazuKjplFEy6iVnQIK0y/eifHldIwckad3hpNtPo7zTtyf5fuoahQW266MBZIQgA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\svyat\\source\\repos\\TheCookingBook\\CookClasses\\CookClasses.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\svyat\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\svyat\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\svyat\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

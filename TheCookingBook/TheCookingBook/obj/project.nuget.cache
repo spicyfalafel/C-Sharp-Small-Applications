@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nmHSfGL0sACeH8fX5haIueR+vFsKIrImIAGfOd758VDbZfj4n1Nm41IARXqR7oJE4vQzxnBhMXlZjdTh+vq33w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\svyat\\source\\repos\\TheCookingBook\\TheCookingBook\\TheCookingBook.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\svyat\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

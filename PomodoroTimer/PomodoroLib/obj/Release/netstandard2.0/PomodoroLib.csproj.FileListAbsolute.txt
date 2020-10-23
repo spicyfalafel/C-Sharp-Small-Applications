@@ -1,0 +1,9 @@
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\bin\Release\netstandard2.0\PomodoroLib.deps.json
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\bin\Release\netstandard2.0\PomodoroLib.dll
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\bin\Release\netstandard2.0\PomodoroLib.pdb
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\obj\Release\netstandard2.0\PomodoroLib.csprojAssemblyReference.cache
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\obj\Release\netstandard2.0\PomodoroLib.AssemblyInfoInputs.cache
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\obj\Release\netstandard2.0\PomodoroLib.AssemblyInfo.cs
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\obj\Release\netstandard2.0\PomodoroLib.csproj.CoreCompileInputs.cache
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\obj\Release\netstandard2.0\PomodoroLib.dll
+C:\Users\svyat\source\repos\PomodoroTimer\PomodoroLib\obj\Release\netstandard2.0\PomodoroLib.pdb
